@@ -1,0 +1,21 @@
+body{
+    background-color: rgb(204, 107, 107);
+}
+header ul {
+    display: flex;
+    background-color: aqua;
+    height: 5rem;
+}
+
+li{
+    margin: 2rem;
+}
+
+main{
+    background-color: blanchedalmond;
+}
+
+footer{
+    background-color: bisque;
+    height: 3rem;
+}

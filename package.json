@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "mysql2": "^3.15.1"
+  },
+  "name": "mon-projet-4",
+  "version": "1.0.0",
+  "main": "serveur.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MathieuPaillard/Mon-projet-4.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MathieuPaillard/Mon-projet-4/issues"
+  },
+  "homepage": "https://github.com/MathieuPaillard/Mon-projet-4#readme",
+  "description": ""
+}
