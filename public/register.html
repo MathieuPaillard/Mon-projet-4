@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style3.css">
 </head>
 
 <body>
@@ -21,11 +21,26 @@
     </header>
     <main>
         <h1>
-Vous êtes sur la page d'inscription.
+            Vous êtes sur la page d'inscription.
         </h1>
         <div>
             <p> formulaire d'inscription. Vous devez saisir les données demandées pour vous inscrire.</p>
         </div>
+        <section>
+            <form class="formulaire" action="/api/inscription" method="post">
+                <label for="name">NOM :</label>
+                <input name="name" type="text">
+                <label for="firstname">Prénom :</label>
+                <input name="firstname" type="text">
+                <label for="email">email</label>
+                <input name="email" type="email">
+                <label for="password">PASSWORD :</label>
+                <input name="password" type="password">
+                <label for="validate">Bouton de validation</label>
+                <button name="validate" type="submit">Validation</button>
+            </form>
+        </section>
+
     </main>
     <footer></footer>
 </body>

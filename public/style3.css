@@ -1,0 +1,98 @@
+/* style.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #ffecd2, #fcb69f);
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: #ff7e5f;
+  padding: 1rem 2rem;
+   box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+
+header ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+header a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+/* Main */
+main {
+  max-width: 600px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: #fffaf5;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+
+h1 {
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  color: #ff7e5f;
+}
+
+/* Formulaire */
+.formulaire {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.formulaire label {
+  font-size: 0.9rem;
+  color: #444;
+  font-weight: bold;
+}
+
+.formulaire input {
+  padding: 0.6rem;
+  border: 2px solid #fcb69f;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.formulaire input:focus {
+  border-color: #ff7e5f;
+  outline: none;
+}
+
+/* Bouton */
+button {
+  padding: 0.8rem;
+  border: none;
+  border-radius: 6px;
+  background: #ff7e5f;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #eb5e3e;
+}
+.footer{
+     box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
