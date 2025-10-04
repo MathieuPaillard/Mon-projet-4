@@ -25,9 +25,45 @@
         </h1>
         <div>
             <p> formulaire de connexion</p>
+            <form id="loginForm" class="formulaire">
+                <label for="email">Email</label>
+                <input type="email" name="email">
+                <label for="password">Mot de passe</label>
+                <input type="password" name="password">
+                <button type="submit">Validation</button>
+            </form>
         </div>
     </main>
     <footer></footer>
+
+
+<script>
+document.getElementById('loginForm').addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    const form = e.target;
+    const email = form.email.value;
+    const password = form.password.value;
+
+    // On envoie login + mot de passe
+    const res = await fetch('/api/login', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email, password })
+    });
+
+    // Ici, on ne récupère plus le token
+    if (res.ok) {
+        alert('Connexion réussie !');
+        // Le cookie est déjà créé côté serveur
+        window.location.href = '/ui'; // redirection simple
+    } else {
+        const data = await res.json();
+        alert('Erreur : ' + data.message);
+    }
+});
+</script>
+
 </body>
 
 </html>
