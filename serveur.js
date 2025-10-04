@@ -82,7 +82,7 @@ app.post('/api/login', async (req, res) => {
 
     try {
         const [rows] = await pool.execute('SELECT * FROM users WHERE email = ?', [email]);
-        if (rows.lenght === 0) {
+        if (rows.length === 0) {
             return res.status(400).json({ success: false, message: "Utilisateur introuvable" });
         }
         const user = rows[0];
