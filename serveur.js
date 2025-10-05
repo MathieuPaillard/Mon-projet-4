@@ -96,10 +96,12 @@ app.post('/api/login', async (req, res) => {
             process.env.JWT_SECRET,
             { expiresIn: "5min" }  // durée de validité
         );
+        console.log(token);
+        
         res.cookie('token', token, {
             httpOnly: true,
             secure: process.env.NODE_ENV === 'production', // en prod https obligatoire
-            maxAge: 3600000 // 1h
+            maxAge: 300000 // 1h
         });
         return res.redirect('/ui');
 
